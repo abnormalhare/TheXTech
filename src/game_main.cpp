@@ -57,6 +57,7 @@
 
 #include "config.h"
 #include "frame_timer.h"
+#include "blk_id.h"
 #include "blocks.h"
 #include "change_res.h"
 #include "collision.h"
@@ -2340,38 +2341,38 @@ void Got100Coins()
 
 void SizableBlocks()
 {
-    BlockIsSizable[568] = true;
-    BlockIsSizable[579] = true;
-    BlockIsSizable[575] = true;
-    BlockIsSizable[25] = true;
-    BlockIsSizable[26] = true;
-    BlockIsSizable[27] = true;
-    BlockIsSizable[28] = true;
-    BlockIsSizable[38] = true;
-    BlockIsSizable[79] = true;
-    BlockIsSizable[108] = true;
-    BlockIsSizable[130] = true;
-    BlockIsSizable[161] = true;
-    BlockIsSizable[240] = true;
-    BlockIsSizable[241] = true;
-    BlockIsSizable[242] = true;
-    BlockIsSizable[243] = true;
-    BlockIsSizable[244] = true;
-    BlockIsSizable[245] = true;
-    BlockIsSizable[259] = true;
-    BlockIsSizable[260] = true;
-    BlockIsSizable[261] = true;
-    BlockIsSizable[287] = true;
-    BlockIsSizable[288] = true;
-    BlockIsSizable[437] = true;
-    BlockIsSizable[441] = true;
-    BlockIsSizable[442] = true;
-    BlockIsSizable[443] = true;
-    BlockIsSizable[444] = true;
-    BlockIsSizable[438] = true;
-    BlockIsSizable[439] = true;
-    BlockIsSizable[440] = true;
-    BlockIsSizable[445] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_CASTLE] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_WOOD] = true;
+    BlockIsSizable[BLKID_S3_WATER_BLOCK] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_GREEN] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_RED] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_BLUE] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_WHITE] = true;
+    BlockIsSizable[BLKID_S2_SSPLAT_GREEN] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_HILL] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_DESERT] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_GREEN_HILL] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_GROUND_HILL] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_SNOW] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_ICE] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_ICE2] = true;
+    BlockIsSizable[BLKID_S2_SSPLAT_GRASS] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_MUSHROOM_GREEN] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CAVE] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_MUSHROOM_RED] = true;
+    BlockIsSizable[BLKID_S3_SSPLAT_GRASS] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_MUSHROOM_BLUE] = true;
+    BlockIsSizable[BLKID_S1_SSPLAT_GRASS] = true;
+    BlockIsSizable[BLKID_S2_SSPLAT_SAND] = true;
+    BlockIsSizable[BLKID_S4_CASTLE_BROWN_BLOCKS] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_DARK_FOREST_HILL] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_LIGHT_FOREST_HILL] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CAVE_GREEN] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CAVE_GRAY] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CASTLE_BRICKS_BLUE] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CASTLE_BRICKS_BROWN] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CASTLE_BRICKS_GRAY] = true;
+    BlockIsSizable[BLKID_S4_SSPLAT_CAVE_BROWN] = true;
 }
 
 static void s_InitPlayersFromCharSelect()

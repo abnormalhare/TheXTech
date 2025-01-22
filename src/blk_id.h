@@ -232,7 +232,7 @@ enum BLKID
     BLKID_S3_BUMPABLE_BLOCK             = 159,
     BLKID_S3_BONUS_AQUA_BRICKS          = 160,
 
-    BLKID_S4_SSPLAT_FOREST_HILL         = 161,
+    BLKID_S4_SSPLAT_GROUND_HILL         = 161,
 
     BLKID_S3_SAND2_TOP_LEFT             = 162,
     BLKID_S3_SAND2_TOP                  = 163,
@@ -340,6 +340,83 @@ enum BLKID
     BLKID_S4_SSPLAT_MUSHROOM_GREEN      = 244,
     BLKID_S4_SSPLAT_CAVE                = 245,
 
+    BLKID_S4_CAVE_TOP_LEFT              = 246,
+    BLKID_S4_CAVE_TOP_RIGHT             = 247,
+    BLKID_S4_CAVE_BOTTOM_LEFT           = 248,
+    BLKID_S4_CAVE_BOTTOM_RIGHT          = 249,
+    BLKID_S4_CAVE_TOP                   = 250,
+    BLKID_S4_CAVE_CENTER                = 251,
+    BLKID_S4_CAVE_LEFT                  = 252,
+    BLKID_S4_CAVE_RIGHT                 = 253,
+    BLKID_S4_CAVE_BOTTOM                = 254,
+    BLKID_S4_CAVE_IN_BOTTOM_LEFT        = 255,
+    BLKID_S4_CAVE_IN_BOTTOM_RIGHT       = 256,
+    BLKID_S4_CAVE_IN_TOP_RIGHT          = 257,
+    BLKID_S4_CAVE_IN_TOP_LEFT           = 258,
+
+    BLKID_S4_SSPLAT_MUSHROOM_RED        = 259,
+    BLKID_S3_SSPLAT_GRASS               = 260,
+    BLKID_S4_SSPLAT_MUSHROOM_BLUE       = 261,
+
+    BLKID_S4_CAVE_4X4                   = 262,
+
+    BLKID_S4_GRASS_IN_BOTTOM_LEFT       = 263,
+    BLKID_S4_GRASS_BOTTOM               = 264,
+    BLKID_S4_GRASS_BOTTOM_LEFT          = 265,
+    BLKID_S4_GRASS_BOTTOM_RIGHT         = 266,
+
+    BLKID_S3_SPIKE_RIGHT                = 267,
+    BLKID_S3_SPIKE_DOWN                 = 268,
+    BLKID_S3_SPIKE_LEFT                 = 269,
+
+    BLKID_S3_SNOW_TOP_LEFT              = 270,
+    BLKID_S3_SNOW_TOP_RIGHT             = 271,
+    BLKID_S3_SNOW_TOP                   = 272,
+
+    BLKID_S4_GRASS_IN_BOTTOM_RIGHT      = 273,
+
+    BLKID_S3_WOOD_BOTTOM_LEFT           = 274,
+    BLKID_S3_WOOD_BOTTOM_RIGHT          = 275,
+    BLKID_S3_WOOD_BOTTOM                = 276,
+
+    BLKID_S3_GRASS_BOTTOM_RIGHT         = 277,
+    BLKID_S3_GRASS_BOTTOM               = 278,
+    BLKID_S3_GRASS_BOTTOM_LEFT          = 279,
+    
+    BLKID_S3_RED_BLOCK                  = 280,
+
+    BLKID_S4_HELP_BLOCK                 = 281,
+    BLKID_S4_SWITCH_ON                  = 282,
+    BLKID_S4_SWITCH_OFF                 = 283,
+
+    BLKID_S3_SAND2_BOTTOM_RIGHT         = 284,
+    BLKID_S3_SAND2_BOTTOM               = 285,
+    BLKID_S3_SAND2_BOTTOM_LEFT          = 286,
+
+    BLKID_S1_SSPLAT_GRASS               = 287,
+    BLKID_S2_SSPLAT_SAND                = 288,
+
+    BLKID_S2_BRIDGE                     = 289,
+    
+    BLKID_S3_DESERT_CLOUD               = 290,
+
+    BLKID_ZELDA_FLOOR_TOP               = 291,
+    BLKID_ZELDA_FLOOR_BOTTOM            = 292,
+
+    BLKID_S2_STONES                     = 293,
+
+    BLKID_S3_SMALL_PIPE_TOP             = 294,
+    BLKID_S3_SMALL_PIPE_VERT            = 295,
+    BLKID_S3_SMALL_PIPE_BOTTOM          = 296,
+
+    BLKID_S2_VASE_FLIPPED_BASE          = 297,
+    BLKID_S2_VASE_FLIPPED_TOP           = 298,
+
+    BLKID_S4_GRASS_UW_SLOPE_RIGHT       = 301,
+    BLKID_S4_GRASS_UW_SLOPE_LEFT        = 302,
+    BLKID_S4_GRASS_UW_SLOPE_IN_RIGHT    = 303,
+    BLKID_S4_GRASS_UW_SLOPE_IN_LEFT     = 304,
+
     BLKID_S1_LAVA_TOP                   = 371,
     BLKID_S1_CLOUD_BLOCK                = 372,
     BLKID_S1_CLOUD_PLATFORM_LEFT        = 373,
@@ -356,6 +433,18 @@ enum BLKID
     BLKID_S2_CLOUD_PLATFORM_CENTER      = 391,
 
     BLKID_S4_CASTLE_LAVA_TOP            = 404,
+
+    BLKID_S4_CASTLE_BROWN_BLOCKS        = 437,
+
+    BLKID_S4_SSPLAT_CASTLE_BRICKS_BLUE  = 438,
+    BLKID_S4_SSPLAT_CASTLE_BRICKS_BROWN = 439,
+    BLKID_S4_SSPLAT_CASTLE_BRICKS_GRAY  = 440,
+    BLKID_S4_SSPLAT_DARK_FOREST_HILL    = 441,
+    BLKID_S4_SSPLAT_LIGHT_FOREST_HILL   = 442,
+    BLKID_S4_SSPLAT_CAVE_GREEN          = 443,
+    BLKID_S4_SSPLAT_CAVE_GRAY           = 444,
+    BLKID_S4_SSPLAT_CAVE_BROWN          = 445,
+
 
     BLKID_S3_GRY_BRICK                  = 457,
     BLKID_S3_TANOOKI_INVIS_BLOCK        = 458,
@@ -394,20 +483,49 @@ enum BLKID
 
     BLKID_BRINSTAR_FACE_BLOCK           = 530,
 
+    BLKID_S3_SSPLAT_CASTLE              = 568,
+
+    BLKID_S3_PIPE_GRAY_LEFT             = 569,
+    BLKID_S3_PIPE_GRAY_HORIZ            = 570,
+
+    BLKID_S3_STEEL_PIPE                 = 571,
+    BLKID_S3_BIG_CLOUD                  = 572,
+
+    BLKID_S3_WATER_BLOCK                = 575,
+
+    BLKID_S3_SSPLAT_WOOD                = 579,
+
+    BLKID_S3_WOOD_LEFT_1X2              = 595,
+    BLKID_S3_WOOD_CENTER_1X2            = 596,
+    BLKID_S3_WOOD_RIGHT_1X2             = 597,
+
     BLKID_S3_JELECTRO                   = 598,
 
-    BLKID_MARIO_SWITCH                  = 622,
-    BLKID_LUIGI_SWITCH                  = 623,
-    BLKID_PEACH_SWITCH                  = 624,
-    BLKID_TOAD_SWITCH                   = 625,
+    BLKID_S4_REZNOR_PLATFORM            = 615,
 
-    BLKID_MARIO_PASSTHRU_BLOCK          = 626,
-    BLKID_LUIGI_PASSTHRU_BLOCK          = 627,
-    BLKID_PEACH_PASSTHRU_BLOCK          = 628,
-    BLKID_TOAD_PASSTHRU_BLOCK           = 629,
+    BLKID_S4_GRASS_W_SLOPE_LEFT         = 616,
+    BLKID_S4_GRASS_W_SLOPE_RIGHT        = 617,
 
-    BLKID_LINK_SWITCH                   = 631,
-    BLKID_LINK_PASSTHRU_BLOCK           = 632,
+    BLKID_CHAR1_SWITCH                  = 622,
+    BLKID_CHAR2_SWITCH                  = 623,
+    BLKID_CHAR3_SWITCH                  = 624,
+    BLKID_CHAR4_SWITCH                  = 625,
+
+    BLKID_CHAR1_PASSTHRU_BLOCK          = 626,
+    BLKID_CHAR2_PASSTHRU_BLOCK          = 627,
+    BLKID_CHAR3_PASSTHRU_BLOCK          = 628,
+    BLKID_CHAR4_PASSTHRU_BLOCK          = 629,
+
+    BLKID_CHAR5_SWITCH                  = 631,
+    BLKID_CHAR5_PASSTHRU_BLOCK          = 632,
+
+    BLKID_S3_ICE_BLOCK                  = 633,
+    BLKID_S3_ICE_BLOCK_2X2              = 634,
+
+    BLKID_S3_SAND2_SLOPE_LEFT       = 635,
+    BLKID_S3_SAND2_W_SLOPE_LEFT     = 636,
+    BLKID_S3_SAND2_SLOPE_RIGHT      = 637,
+    BLKID_S3_SAND2_W_SLOPE_RIGHT    = 638,
 
     // these can be expanded into user-modifiable ranges in the future.
     // currently the "CONV" blocks can't be placed or modified in any way by the user

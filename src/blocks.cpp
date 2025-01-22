@@ -87,11 +87,11 @@ void BlockHit(int A, bool HitDown, int whatPlayer)
             {
                 switch(Player[B].Character)
                 {
-                case 1: BlockFrame[BLKID_MARIO_SWITCH] = 4; break;
-                case 2: BlockFrame[BLKID_LUIGI_SWITCH] = 4; break;
-                case 3: BlockFrame[BLKID_PEACH_SWITCH] = 4; break;
-                case 4: BlockFrame[BLKID_TOAD_SWITCH]  = 4; break;
-                case 5: BlockFrame[BLKID_LINK_SWITCH]  = 4; break;
+                case 1: BlockFrame[BLKID_CHAR1_SWITCH] = 4; break;
+                case 2: BlockFrame[BLKID_CHAR2_SWITCH] = 4; break;
+                case 3: BlockFrame[BLKID_CHAR3_SWITCH] = 4; break;
+                case 4: BlockFrame[BLKID_CHAR4_SWITCH] = 4; break;
+                case 5: BlockFrame[BLKID_CHAR5_SWITCH] = 4; break;
                 default: break;
                 }
             }
@@ -1125,47 +1125,47 @@ void BlockFrames()
     BlockFrame[BLKID_S4_LAVA_SLOPE_BOT_LEFT]        = BlockFrame[BLKID_S3_Q_BLOCK];
     BlockFrame[BLKID_S4_LAVA_SLOPE_IN_BOT_LEFT]     = BlockFrame[BLKID_S3_Q_BLOCK];
 
-    BlockFrame[BLKID_MARIO_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
-    BlockFrame[BLKID_LUIGI_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
-    BlockFrame[BLKID_PEACH_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
-    BlockFrame[BLKID_TOAD_SWITCH]  = BlockFrame[BLKID_S3_Q_BLOCK];
-    BlockFrame[BLKID_LINK_SWITCH]  = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_CHAR1_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_CHAR2_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_CHAR3_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_CHAR4_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_CHAR5_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
 
     for(A = 1; A <= numPlayers; A++)
     {
         if(Player[A].Character == 1)
-            BlockFrame[BLKID_MARIO_SWITCH] = 4;
+            BlockFrame[BLKID_CHAR1_SWITCH] = 4;
 
         if(Player[A].Character == 2)
-            BlockFrame[BLKID_LUIGI_SWITCH] = 4;
+            BlockFrame[BLKID_CHAR2_SWITCH] = 4;
 
         if(Player[A].Character == 3)
-            BlockFrame[BLKID_PEACH_SWITCH] = 4;
+            BlockFrame[BLKID_CHAR3_SWITCH] = 4;
 
         if(Player[A].Character == 4)
-            BlockFrame[BLKID_TOAD_SWITCH] = 4;
+            BlockFrame[BLKID_CHAR4_SWITCH] = 4;
 
         if(Player[A].Character == 5)
-            BlockFrame[BLKID_LINK_SWITCH] = 4;
+            BlockFrame[BLKID_CHAR5_SWITCH] = 4;
     }
 
-    BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] += 1;
-    if(BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] < 8)
-        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 3;
-    else if(BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] < 16)
-        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 2;
-    else if(BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] < 23)
-        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 1;
+    BlockFrame2[BLKID_CHAR1_PASSTHRU_BLOCK] += 1;
+    if(BlockFrame2[BLKID_CHAR1_PASSTHRU_BLOCK] < 8)
+        BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK] = 3;
+    else if(BlockFrame2[BLKID_CHAR1_PASSTHRU_BLOCK] < 16)
+        BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK] = 2;
+    else if(BlockFrame2[BLKID_CHAR1_PASSTHRU_BLOCK] < 23)
+        BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK] = 1;
     else
     {
-        BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] = 0;
-        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 1;
+        BlockFrame2[BLKID_CHAR1_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK] = 1;
     }
 
-    BlockFrame[BLKID_LUIGI_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
-    BlockFrame[BLKID_PEACH_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
-    BlockFrame[BLKID_TOAD_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
-    BlockFrame[BLKID_LINK_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_CHAR2_PASSTHRU_BLOCK] = BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_CHAR3_PASSTHRU_BLOCK] = BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_CHAR4_PASSTHRU_BLOCK] = BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_CHAR5_PASSTHRU_BLOCK] = BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK];
 
     for(A = 1; A <= numPlayers; A++)
     {
@@ -1174,19 +1174,19 @@ void BlockFrames()
     }
 
     if(!pChar[1])
-        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_CHAR1_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[2])
-        BlockFrame[BLKID_LUIGI_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_CHAR2_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[3])
-        BlockFrame[BLKID_PEACH_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_CHAR3_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[4])
-        BlockFrame[BLKID_TOAD_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_CHAR4_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[5])
-        BlockFrame[BLKID_LINK_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_CHAR5_PASSTHRU_BLOCK] = 0;
 
     if(BlockFrame2[BLKID_S3_LAVA_TOP] == 0)
     {

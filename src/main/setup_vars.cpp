@@ -2093,101 +2093,101 @@ void SetupVars()
 
     For(A, 1, maxBlockType)
     {
-        BlockWidth[A] = 32;
+        BlockWidth[A]  = 32;
         BlockHeight[A] = 32;
     }
 
-    BlockWidth[571] = 64;
-    BlockWidth[572] = 64;
-    BlockWidth[615] = 64;
+    BlockWidth[BLKID_S3_STEEL_PIPE]       = 64;
+    BlockWidth[BLKID_S3_BIG_CLOUD]        = 64;
+    BlockWidth[BLKID_S4_REZNOR_PLATFORM]  = 64;
 
-    BlockWidth[634] = 64;
-    BlockHeight[634] = 64;
+    BlockWidth[BLKID_S3_ICE_BLOCK_2X2]    = 64;
+    BlockHeight[BLKID_S3_ICE_BLOCK_2X2]   = 64;
 
-    BlockHeight[595] = 64;
-    BlockHeight[596] = 64;
-    BlockHeight[597] = 64;
+    BlockHeight[BLKID_S3_WOOD_LEFT_1X2]   = 64;
+    BlockHeight[BLKID_S3_WOOD_CENTER_1X2] = 64;
+    BlockHeight[BLKID_S3_WOOD_RIGHT_1X2]  = 64;
 
-    BlockHeight[569] = 64;
-    BlockHeight[570] = 64;
-    BlockHeight[571] = 64;
-    BlockHeight[572] = 64;
-    BlockHeight[575] = 64;
+    BlockHeight[BLKID_S3_PIPE_GRAY_LEFT]  = 64;
+    BlockHeight[BLKID_S3_PIPE_GRAY_HORIZ] = 64;
+    BlockHeight[BLKID_S3_STEEL_PIPE]      = 64;
+    BlockHeight[BLKID_S3_BIG_CLOUD]       = 64;
+    BlockHeight[BLKID_S3_WATER_BLOCK_4X4] = 64;
 
-    BlockOnlyHitspot1[572] = true;
-    BlockWidth[21] = 64;
-    BlockWidth[22] = 64;
-    BlockHeight[23] = 64;
-    BlockHeight[24] = 64;
-    BlockWidth[34] = 64;
-    BlockWidth[35] = 64;
-    BlockWidth[36] = 64;
-    BlockWidth[37] = 64;
-    BlockWidth[61] = 128;
-    BlockHeight[61] = 128;
-    BlockWidth[78] = 64;
-    BlockWidth[91] = 64;
-    BlockHeight[91] = 64;
-    BlockWidth[92] = 128;
-    BlockHeight[92] = 128;
-    BlockWidth[93] = 128;
-    BlockHeight[93] = 128;
-    BlockWidth[103] = 64;
-    BlockWidth[104] = 64;
-    BlockWidth[113] = 64;
-    BlockWidth[114] = 64;
-    BlockWidth[125] = 64;
-    BlockHeight[125] = 64;
-    BlockWidth[182] = 96;
-    BlockHeight[182] = 96;
-    BlockWidth[184] = 64;
-    BlockHeight[184] = 64;
-    BlockWidth[185] = 128;
-    BlockHeight[187] = 128;
-    BlockWidth[187] = 128;
-    BlockWidth[194] = 64;
-    BlockWidth[195] = 64;
-    BlockWidth[196] = 64;
-    BlockWidth[197] = 64;
-    BlockWidth[206] = 64;
-    BlockHeight[206] = 64;
-    BlockHeight[211] = 64;
-    BlockHeight[212] = 64;
-    BlockWidth[224] = 64;
-    BlockHeight[224] = 64;
-    BlockWidth[225] = 64;
-    BlockHeight[225] = 64;
-    BlockWidth[226] = 64;
-    BlockHeight[226] = 64;
-    BlockWidth[262] = 128;
-    BlockHeight[262] = 128;
+    BlockOnlyHitspot1[BLKID_S3_BIG_CLOUD] = true;
+    BlockWidth[BLKID_S3_PIPE_TOP] = 64;
+    BlockWidth[BLKID_S3_PIPE_VERT] = 64;
+    BlockHeight[BLKID_S3_PIPE_LEFT] = 64;
+    BlockHeight[BLKID_S3_PIPE_HORIZ] = 64;
+    BlockWidth[BLKID_S3_PIPE_GRAY_TOP] = 64;
+    BlockWidth[BLKID_S3_PIPE_GRAY_VERT] = 64;
+    BlockWidth[BLKID_S3_PIPE_RED_TOP] = 64;
+    BlockWidth[BLKID_S3_PIPE_RED_VERT] = 64;
+    BlockWidth[BLKID_S1_CAVE_BLOCK_4X4] = 128;
+    BlockHeight[BLKID_S1_CAVE_BLOCK_4X4] = 128;
+    BlockWidth[BLKID_S3_SHIP_WOOD_CEL_LEFT] = 64;
+    BlockWidth[BLKID_S3_CASTLE_FLOOR_2X2] = 64;
+    BlockHeight[BLKID_S3_CASTLE_FLOOR_2X2] = 64;
+    BlockWidth[BLKID_S3_WOOD_BLOCK_4X4] = 128;
+    BlockHeight[BLKID_S3_WOOD_BLOCK_4X4] = 128;
+    BlockWidth[BLKID_S1_BLOCK_4X4] = 128;
+    BlockHeight[BLKID_S1_BLOCK_4X4] = 128;
+    BlockWidth[BLKID_S3_PIPE_ORANGE_TOP] = 64;
+    BlockWidth[BLKID_S3_PIPE_ORANGE_VERT] = 64;
+    BlockWidth[BLKID_S4_PIPE_PURPLE_TOP] = 64;
+    BlockWidth[BLKID_S4_PIPE_PURPLE_VERT] = 64;
+    BlockWidth[BLKID_S4_GHOST_HOUSE_BIG_BRICK] = 64;
+    BlockHeight[BLKID_S4_GHOST_HOUSE_BIG_BRICK] = 64;
+    BlockWidth[BLKID_S3_BIG_PIPE] = 96;
+    BlockHeight[BLKID_S3_BIG_PIPE] = 96;
+    BlockWidth[BLKID_S3_GRASS_2X2] = 64;
+    BlockHeight[BLKID_S3_GRASS_2X2] = 64;
+    BlockWidth[BLKID_S3_TANK_CATERPILLAR] = 128;
+    BlockHeight[BLKID_S3_RED_BRICK_4X4] = 128;
+    BlockWidth[BLKID_S3_RED_BRICK_4X4] = 128;
+    BlockWidth[BLKID_S1_GRAY_PIPE_TOP] = 64;
+    BlockWidth[BLKID_S1_GRAY_PIPE_VERT] = 64;
+    BlockWidth[BLKID_S1_PIPE_TOP] = 64;
+    BlockWidth[BLKID_S1_PIPE_VERT] = 64;
+    BlockWidth[BLKID_S2_CAVE_2X2] = 64;
+    BlockHeight[BLKID_S2_CAVE_2X2] = 64;
+    BlockHeight[BLKID_S2_CAVE_LEFT_1X2] = 64;
+    BlockHeight[BLKID_S2_CAVE_RIGHT_1X2] = 64;
+    BlockWidth[BLKID_S3_BIG_Q_BLOCK] = 64;
+    BlockHeight[BLKID_S3_BIG_Q_BLOCK] = 64;
+    BlockWidth[BLKID_S3_BIG_Q_BLOCK_HIT] = 64;
+    BlockHeight[BLKID_S3_BIG_Q_BLOCK_HIT] = 64;
+    BlockWidth[BLKID_S3_BIG_BRICK] = 64;
+    BlockHeight[BLKID_S3_BIG_BRICK] = 64;
+    BlockWidth[BLKID_S4_CAVE_4X4] = 128;
+    BlockHeight[BLKID_S4_CAVE_4X4] = 128;
 
-    BlockWidth[616] = 64;
-    BlockWidth[617] = 64;
-    BlockSlope[616] = -1;
-    BlockSlope[617] = 1;
+    BlockWidth[BLKID_S4_GRASS_W_SLOPE_LEFT] = 64;
+    BlockWidth[BLKID_S4_GRASS_W_SLOPE_RIGHT] = 64;
+    BlockSlope[BLKID_S4_GRASS_W_SLOPE_LEFT] = -1;
+    BlockSlope[BLKID_S4_GRASS_W_SLOPE_RIGHT] = 1;
 
-    BlockSlope[635] = -1;
-    BlockSlope[636] = -1;
-    BlockWidth[636] = 64;
-    BlockSlope[637] = 1;
-    BlockSlope[638] = 1;
-    BlockWidth[638] = 64;
+    BlockSlope[BLKID_S3_SAND2_SLOPE_LEFT] = -1;
+    BlockSlope[BLKID_S3_SAND2_W_SLOPE_LEFT] = -1;
+    BlockWidth[BLKID_S3_SAND2_W_SLOPE_LEFT] = 64;
+    BlockSlope[BLKID_S3_SAND2_SLOPE_RIGHT] = 1;
+    BlockSlope[BLKID_S3_SAND2_W_SLOPE_RIGHT] = 1;
+    BlockWidth[BLKID_S3_SAND2_W_SLOPE_RIGHT] = 64;
 
 
-    For(A, 137, 146)
+    For(A, BLKID_S4_PIPE_ORANGE_TOP, BLKID_S4_PIPE_YELLOW_VERT)
     {
         BlockWidth[A] = 64;
     }
 
-    For(A, 147, 158)
+    For(A, BLKID_S4_PIPE_LEFT, BLKID_S4_PIPE_PURPLE_HORIZ)
     {
         BlockHeight[A] = 64;
     }
-    BlockWidth[301] = 128;
-    BlockWidth[302] = 128;
-    BlockWidth[303] = 128;
-    BlockWidth[304] = 128;
+    BlockWidth[BLKID_S4_GRASS_UW_SLOPE_RIGHT] = 128;
+    BlockWidth[BLKID_S4_GRASS_UW_SLOPE_LEFT] = 128;
+    BlockWidth[BLKID_S4_GRASS_UW_SLOPE_IN_RIGHT] = 128;
+    BlockWidth[BLKID_S4_GRASS_UW_SLOPE_IN_LEFT] = 128;
     BlockWidth[306] = 64;
     BlockWidth[308] = 64;
     BlockWidth[312] = 64;
