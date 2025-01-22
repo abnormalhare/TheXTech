@@ -57,6 +57,7 @@
 #include "effect.h"
 #include "npc_id.h"
 #include "eff_id.h"
+#include "blk_id.h"
 #include "npc_traits.h"
 #include "draw_planes.h"
 
@@ -358,7 +359,7 @@ public:
             if(NPC[A]->IsAVine)
             {
                 if(NPC[A].Type == NPCID_GRN_VINE_S3 || NPC[A].Type == NPCID_RED_VINE_S3)
-                    NPC[A].Frame = BlockFrame[5];
+                    NPC[A].Frame = BlockFrame[BLKID_S3_Q_BLOCK];
                 else if(NPC[A].Type >= NPCID_GRN_VINE_S2 && NPC[A].Type <= NPCID_BLU_VINE_BASE_S2)
                     NPC[A].Frame = SpecialFrame[7];
             }

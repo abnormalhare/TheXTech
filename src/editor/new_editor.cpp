@@ -43,6 +43,7 @@
 
 #include "config.h"
 #include "npc_id.h"
+#include "blk_id.h"
 #include "npc_traits.h"
 #include "npc_special_data.h"
 #include "controls.h"
@@ -929,7 +930,7 @@ void EditorScreen::UpdateNPCScreen(CallMode mode)
         if(EditorCursor.NPC.Type == NPCID_VILLAIN_S3 && FileFormat == FileFormats::LVL_PGEX)
         {
             if(UpdateButton(mode, e_ScreenW - 40 + 4, 240 + 4, GFXBlock[4], EditorCursor.NPC.Variant == 1,
-                0, 32 * BlockFrame[4], 32, 32, g_editorStrings.npcTooltipExpandSection.c_str()))
+                0, 32 * BlockFrame[BLKID_S3_BRICKS], 32, 32, g_editorStrings.npcTooltipExpandSection.c_str()))
             {
                 if(EditorCursor.NPC.Variant == 0)
                     EditorCursor.NPC.Variant = 1;

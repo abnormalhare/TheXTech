@@ -23,6 +23,7 @@
 #include "../custom.h"
 #include "npc_traits.h"
 #include "npc_id.h"
+#include "blk_id.h"
 
 void SetupVars()
 {

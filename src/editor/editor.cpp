@@ -35,6 +35,7 @@
 #include "sound.h"
 #include "collision.h"
 #include "npc.h"
+#include "blk_id.h"
 #include "blocks.h"
 #include "sorting.h"
 #include "player.h"
@@ -1987,7 +1988,7 @@ int EditorNPCFrame(const NPCID A, vbint_t& C, int N)
     }
 
     if(A == 45)
-        ret = BlockFrame[4];
+        ret = BlockFrame[BLKID_S3_BRICKS];
 
     if(A == 56)
     {

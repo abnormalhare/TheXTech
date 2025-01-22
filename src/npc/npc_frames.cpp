@@ -23,6 +23,7 @@
 #include "sound.h"
 #include "collision.h"
 #include "effect.h"
+#include "blk_id.h"
 #include "npc_id.h"
 #include "eff_id.h"
 #include "npc_traits.h"
@@ -1320,7 +1321,7 @@ void NPCFrames(int A)
     else if(NPC[A].Type == NPCID_SLIDE_BLOCK) // ice block
     {
         if(NPC[A].Special == 0)
-            NPC[A].Frame = BlockFrame[4];
+            NPC[A].Frame = BlockFrame[BLKID_S3_BRICKS];
         else
         {
             if(NPC[A].Frame < 4)

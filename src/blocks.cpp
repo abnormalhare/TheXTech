@@ -87,11 +87,11 @@ void BlockHit(int A, bool HitDown, int whatPlayer)
             {
                 switch(Player[B].Character)
                 {
-                case 1: BlockFrame[622] = 4; break;
-                case 2: BlockFrame[623] = 4; break;
-                case 3: BlockFrame[624] = 4; break;
-                case 4: BlockFrame[625] = 4; break;
-                case 5: BlockFrame[631] = 4; break;
+                case 1: BlockFrame[BLKID_MARIO_SWITCH] = 4; break;
+                case 2: BlockFrame[BLKID_LUIGI_SWITCH] = 4; break;
+                case 3: BlockFrame[BLKID_PEACH_SWITCH] = 4; break;
+                case 4: BlockFrame[BLKID_TOAD_SWITCH]  = 4; break;
+                case 5: BlockFrame[BLKID_LINK_SWITCH]  = 4; break;
                 default: break;
                 }
             }
@@ -1038,133 +1038,134 @@ void BlockFrames()
         return;
 
     // Update block frame counter
-    BlockFrame2[4] += 1;
-    if(BlockFrame2[4] == 8)
-        BlockFrame2[4] = 0;
+    BlockFrame2[BLKID_S3_BRICKS] += 1;
+    if(BlockFrame2[BLKID_S3_BRICKS] == 8)
+        BlockFrame2[BLKID_S3_BRICKS] = 0;
 
-    BlockFrame2[5] += 1;
-    if(BlockFrame2[5] == 8)
-        BlockFrame2[5] = 0;
+    BlockFrame2[BLKID_S3_Q_BLOCK] += 1;
+    if(BlockFrame2[BLKID_S3_Q_BLOCK] == 8)
+        BlockFrame2[BLKID_S3_Q_BLOCK] = 0;
 
-    BlockFrame2[30] += 1;
-    if(BlockFrame2[30] == 8)
-        BlockFrame2[30] = 0;
+    BlockFrame2[BLKID_S3_LAVA_TOP] += 1;
+    if(BlockFrame2[BLKID_S3_LAVA_TOP] == 8)
+        BlockFrame2[BLKID_S3_LAVA_TOP] = 0;
 
-    BlockFrame2[55] += 1;
-    if(BlockFrame2[55] == 8)
-        BlockFrame2[55] = 0;
+    BlockFrame2[BLKID_S3_NOTE_BLOCK] += 1;
+    if(BlockFrame2[BLKID_S3_NOTE_BLOCK] == 8)
+        BlockFrame2[BLKID_S3_NOTE_BLOCK] = 0;
 
-    BlockFrame2[88] += 1;
-    if(BlockFrame2[88] == 8)
-        BlockFrame2[88] = 0;
+    BlockFrame2[BLKID_S4_Q_BLOCK] += 1;
+    if(BlockFrame2[BLKID_S4_Q_BLOCK] == 8)
+        BlockFrame2[BLKID_S4_Q_BLOCK] = 0;
 
-    BlockFrame2[109] += 1;
-    if(BlockFrame2[109] == 4)
-        BlockFrame2[109] = 0;
+    BlockFrame2[BLKID_S3_MUNCHER] += 1;
+    if(BlockFrame2[BLKID_S3_MUNCHER] == 4)
+        BlockFrame2[BLKID_S3_MUNCHER] = 0;
 
-    BlockFrame2[371] += 1;
-    if(BlockFrame2[371] == 8)
-        BlockFrame2[371] = 0;
+    BlockFrame2[BLKID_S1_LAVA_TOP] += 1;
+    if(BlockFrame2[BLKID_S1_LAVA_TOP] == 8)
+        BlockFrame2[BLKID_S1_LAVA_TOP] = 0;
 
-    BlockFrame2[379] += 1;
-    if(BlockFrame2[379] >= 12)
-        BlockFrame2[379] = 0;
+    BlockFrame2[BLKID_S1_CLOUD_PLATFORM2_LEFT] += 1;
+    if(BlockFrame2[BLKID_S1_CLOUD_PLATFORM2_LEFT] >= 12)
+        BlockFrame2[BLKID_S1_CLOUD_PLATFORM2_LEFT] = 0;
 
     // Check if the block type is ready for the next frame
-    if(BlockFrame2[4] == 0)
+    if(BlockFrame2[BLKID_S3_BRICKS] == 0)
     {
-        BlockFrame[4] += 1;
-        if(BlockFrame[4] == 4)
-            BlockFrame[4] = 0;
+        BlockFrame[BLKID_S3_BRICKS] += 1;
+        if(BlockFrame[BLKID_S3_BRICKS] == 4)
+            BlockFrame[BLKID_S3_BRICKS] = 0;
     }
 
-    if(BlockFrame2[5] == 0)
+    if(BlockFrame2[BLKID_S3_Q_BLOCK] == 0)
     {
-        BlockFrame[5] += 1;
-        if(BlockFrame[5] == 4)
-            BlockFrame[5] = 0;
+        BlockFrame[BLKID_S3_Q_BLOCK] += 1;
+        if(BlockFrame[BLKID_S3_Q_BLOCK] == 4)
+            BlockFrame[BLKID_S3_Q_BLOCK] = 0;
     }
 
-    BlockFrame[598] = BlockFrame[5];
-    BlockFrame[511] = BlockFrame[5];
-    BlockFrame[169] = BlockFrame[5];
-    BlockFrame[173] = BlockFrame[5];
-    BlockFrame[176] = BlockFrame[5];
-    BlockFrame[179] = BlockFrame[5];
-    BlockFrame[193] = BlockFrame[5];
-    BlockFrame[389] = BlockFrame[5];
-    BlockFrame[391] = BlockFrame[5];
-    BlockFrame[392] = BlockFrame[5];
-    BlockFrame[404] = BlockFrame[5];
-    BlockFrame[459] = BlockFrame[5];
-    BlockFrame[460] = BlockFrame[5];
-    BlockFrame[461] = BlockFrame[5];
-    BlockFrame[462] = BlockFrame[5];
-    BlockFrame[463] = BlockFrame[5];
-    BlockFrame[464] = BlockFrame[5];
-    BlockFrame[465] = BlockFrame[5];
-    BlockFrame[466] = BlockFrame[5];
-    BlockFrame[468] = BlockFrame[5];
-    BlockFrame[469] = BlockFrame[5];
-    BlockFrame[470] = BlockFrame[5];
-    BlockFrame[471] = BlockFrame[5];
-    BlockFrame[472] = BlockFrame[5];
-    BlockFrame[473] = BlockFrame[5];
-    BlockFrame[474] = BlockFrame[5];
-    BlockFrame[475] = BlockFrame[5];
-    BlockFrame[476] = BlockFrame[5];
-    BlockFrame[477] = BlockFrame[5];
-    BlockFrame[478] = BlockFrame[5];
-    BlockFrame[479] = BlockFrame[5];
-    BlockFrame[480] = BlockFrame[5];
-    BlockFrame[481] = BlockFrame[5];
-    BlockFrame[482] = BlockFrame[5];
-    BlockFrame[483] = BlockFrame[5];
-    BlockFrame[484] = BlockFrame[5];
-    BlockFrame[485] = BlockFrame[5];
-    BlockFrame[486] = BlockFrame[5];
-    BlockFrame[487] = BlockFrame[5];
-    BlockFrame[622] = BlockFrame[5];
-    BlockFrame[623] = BlockFrame[5];
-    BlockFrame[624] = BlockFrame[5];
-    BlockFrame[625] = BlockFrame[5];
-    BlockFrame[631] = BlockFrame[5];
+    BlockFrame[BLKID_S3_JELECTRO]                   = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S2_DRILLING_SPIKES]            = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S3_CONVEYOR_SWITCH]            = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_BLUE_SWITCH]                = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_GREEN_SWITCH]               = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_RED_SWITCH]                 = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S1_Q_BLOCK]                    = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S2_CLOUD_PLATFORM_RIGHT]       = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S2_CLOUD_PLATFORM_LEFT]        = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S2_CLOUD_PLATFORM_CENTER]      = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_TOP]                   = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_TOP_RIGHT]             = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_RIGHT]                 = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_BOTTOM]                = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_LEFT]                  = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_BOTTOM_LEFT]           = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_BOTTOM_RIGHT]          = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_TOP_LEFT]              = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_CENTER]                = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_IN_TOP_RIGHT]          = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_IN_BOTTOM_RIGHT]       = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_IN_BOTTOM_LEFT]        = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_IN_TOP_LEFT]           = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_TOP_LEFT]      = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_IN_TOP_LEFT]   = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_TOP_RIGHT]     = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_IN_TOP_RIGHT]  = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_BOT_LEFT]      = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_IN_BOT_LEFT]   = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_IN_BOT_RIGHT]  = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_W_SLOPE_BOT_RIGHT]     = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_TOP_LEFT]        = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_IN_TOP_LEFT]     = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_TOP_RIGHT]       = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_IN_TOP_RIGHT]    = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_IN_BOT_RIGHT]    = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_BOT_RIGHT]       = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_BOT_LEFT]        = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_S4_LAVA_SLOPE_IN_BOT_LEFT]     = BlockFrame[BLKID_S3_Q_BLOCK];
+
+    BlockFrame[BLKID_MARIO_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_LUIGI_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_PEACH_SWITCH] = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_TOAD_SWITCH]  = BlockFrame[BLKID_S3_Q_BLOCK];
+    BlockFrame[BLKID_LINK_SWITCH]  = BlockFrame[BLKID_S3_Q_BLOCK];
 
     for(A = 1; A <= numPlayers; A++)
     {
         if(Player[A].Character == 1)
-            BlockFrame[622] = 4;
+            BlockFrame[BLKID_MARIO_SWITCH] = 4;
 
         if(Player[A].Character == 2)
-            BlockFrame[623] = 4;
+            BlockFrame[BLKID_LUIGI_SWITCH] = 4;
 
         if(Player[A].Character == 3)
-            BlockFrame[624] = 4;
+            BlockFrame[BLKID_PEACH_SWITCH] = 4;
 
         if(Player[A].Character == 4)
-            BlockFrame[625] = 4;
+            BlockFrame[BLKID_TOAD_SWITCH] = 4;
 
         if(Player[A].Character == 5)
-            BlockFrame[631] = 4;
+            BlockFrame[BLKID_LINK_SWITCH] = 4;
     }
 
-    BlockFrame2[626] += 1;
-    if(BlockFrame2[626] < 8)
-        BlockFrame[626] = 3;
-    else if(BlockFrame2[626] < 16)
-        BlockFrame[626] = 2;
-    else if(BlockFrame2[626] < 23)
-        BlockFrame[626] = 1;
+    BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] += 1;
+    if(BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] < 8)
+        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 3;
+    else if(BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] < 16)
+        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 2;
+    else if(BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] < 23)
+        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 1;
     else
     {
-        BlockFrame2[626] = 0;
-        BlockFrame[626] = 1;
+        BlockFrame2[BLKID_MARIO_PASSTHRU_BLOCK] = 0;
+        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 1;
     }
 
-    BlockFrame[627] = BlockFrame[626];
-    BlockFrame[628] = BlockFrame[626];
-    BlockFrame[629] = BlockFrame[626];
-    BlockFrame[632] = BlockFrame[626];
+    BlockFrame[BLKID_LUIGI_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_PEACH_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_TOAD_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
+    BlockFrame[BLKID_LINK_PASSTHRU_BLOCK] = BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK];
 
     for(A = 1; A <= numPlayers; A++)
     {
@@ -1173,90 +1174,90 @@ void BlockFrames()
     }
 
     if(!pChar[1])
-        BlockFrame[626] = 0;
+        BlockFrame[BLKID_MARIO_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[2])
-        BlockFrame[627] = 0;
+        BlockFrame[BLKID_LUIGI_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[3])
-        BlockFrame[628] = 0;
+        BlockFrame[BLKID_PEACH_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[4])
-        BlockFrame[629] = 0;
+        BlockFrame[BLKID_TOAD_PASSTHRU_BLOCK] = 0;
 
     if(!pChar[5])
-        BlockFrame[632] = 0;
+        BlockFrame[BLKID_LINK_PASSTHRU_BLOCK] = 0;
 
-    if(BlockFrame2[30] == 0)
+    if(BlockFrame2[BLKID_S3_LAVA_TOP] == 0)
     {
-        BlockFrame[30] += 1;
-        if(BlockFrame[30] == 4)
-            BlockFrame[30] = 0;
+        BlockFrame[BLKID_S3_LAVA_TOP] += 1;
+        if(BlockFrame[BLKID_S3_LAVA_TOP] == 4)
+            BlockFrame[BLKID_S3_LAVA_TOP] = 0;
     }
 
-    if(BlockFrame2[55] == 0)
+    if(BlockFrame2[BLKID_S3_NOTE_BLOCK] == 0)
     {
-        BlockFrame[55] += 1;
-        if(BlockFrame[55] == 4)
-            BlockFrame[55] = 0;
+        BlockFrame[BLKID_S3_NOTE_BLOCK] += 1;
+        if(BlockFrame[BLKID_S3_NOTE_BLOCK] == 4)
+            BlockFrame[BLKID_S3_NOTE_BLOCK] = 0;
     }
 
-    if(BlockFrame2[88] == 0)
+    if(BlockFrame2[BLKID_S4_Q_BLOCK] == 0)
     {
-        BlockFrame[88] += 1;
-        if(BlockFrame[88] == 4)
-            BlockFrame[88] = 0;
+        BlockFrame[BLKID_S4_Q_BLOCK] += 1;
+        if(BlockFrame[BLKID_S4_Q_BLOCK] == 4)
+            BlockFrame[BLKID_S4_Q_BLOCK] = 0;
     }
 
-    BlockFrame[170] = BlockFrame[88];
+    BlockFrame[BLKID_S4_YELLOW_SWITCH] = BlockFrame[BLKID_S4_Q_BLOCK];
 
-    if(BlockFrame2[109] == 0)
+    if(BlockFrame2[BLKID_S3_MUNCHER] == 0)
     {
-        BlockFrame[109] += 1;
-        if(BlockFrame[109] == 8)
-            BlockFrame[109] = 0;
+        BlockFrame[BLKID_S3_MUNCHER] += 1;
+        if(BlockFrame[BLKID_S3_MUNCHER] == 8)
+            BlockFrame[BLKID_S3_MUNCHER] = 0;
     }
 
-    if(BlockFrame2[371] == 0)
+    if(BlockFrame2[BLKID_S1_LAVA_TOP] == 0)
     {
-        BlockFrame[371] += 1;
-        if(BlockFrame[371] == 8)
-            BlockFrame[371] = 0;
+        BlockFrame[BLKID_S1_LAVA_TOP] += 1;
+        if(BlockFrame[BLKID_S1_LAVA_TOP] == 8)
+            BlockFrame[BLKID_S1_LAVA_TOP] = 0;
     }
 
-    if(BlockFrame2[379] == 0)
+    if(BlockFrame2[BLKID_S1_CLOUD_PLATFORM2_LEFT] == 0)
     {
-        BlockFrame[379] += 1;
-        if(BlockFrame[379] == 4)
-            BlockFrame[379] = 0;
+        BlockFrame[BLKID_S1_CLOUD_PLATFORM2_LEFT] += 1;
+        if(BlockFrame[BLKID_S1_CLOUD_PLATFORM2_LEFT] == 4)
+            BlockFrame[BLKID_S1_CLOUD_PLATFORM2_LEFT] = 0;
     }
 
-    BlockFrame[380] = BlockFrame[379];
-    BlockFrame[381] = BlockFrame[379];
-    BlockFrame[382] = BlockFrame[379];
+    BlockFrame[BLKID_S1_CLOUD_PLATFORM2_FACE_LEFT]  = BlockFrame[BLKID_S1_CLOUD_PLATFORM2_LEFT];
+    BlockFrame[BLKID_S1_CLOUD_PLATFORM2_FACE_RIGHT] = BlockFrame[BLKID_S1_CLOUD_PLATFORM2_LEFT];
+    BlockFrame[BLKID_S1_CLOUD_PLATFORM2_RIGHT]      = BlockFrame[BLKID_S1_CLOUD_PLATFORM2_LEFT];
 
-    BlockFrame2[530] += 1;
+    BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] += 1;
 
-    if(BlockFrame2[530] <= 8)
-        BlockFrame[530] = 0;
-    else if(BlockFrame2[530] <= 16)
-        BlockFrame[530] = 1;
-    else if(BlockFrame2[530] <= 24)
-        BlockFrame[530] = 2;
-    else if(BlockFrame2[530] <= 32)
-        BlockFrame[530] = 3;
-    else if(BlockFrame2[530] <= 40)
-        BlockFrame[530] = 2;
-    else if(BlockFrame2[530] <= 48)
-        BlockFrame[530] = 1;
+    if(BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] <= 8)
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 0;
+    else if(BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] <= 16)
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 1;
+    else if(BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] <= 24)
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 2;
+    else if(BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] <= 32)
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 3;
+    else if(BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] <= 40)
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 2;
+    else if(BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] <= 48)
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 1;
     else
     {
-        BlockFrame[530] = 0;
-        BlockFrame2[530] = 0;
+        BlockFrame[BLKID_BRINSTAR_FACE_BLOCK] = 0;
+        BlockFrame2[BLKID_BRINSTAR_FACE_BLOCK] = 0;
     }
 
     if(LevelEditor && !TestLevel)
-        BlockFrame[458] = 5;
+        BlockFrame[BLKID_S3_TANOOKI_INVIS_BLOCK] = 5;
     else
     {
         tempBool = false;
@@ -1269,26 +1270,26 @@ void BlockFrames()
             }
         }
 
-        if(BlockFrame[458] < 5 && tempBool)
+        if(BlockFrame[BLKID_S3_TANOOKI_INVIS_BLOCK] < 5 && tempBool)
         {
-            BlockFrame2[458] += 1;
-            if(BlockFrame2[458] >= 4)
+            BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] += 1;
+            if(BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] >= 4)
             {
-                BlockFrame2[458] = 0;
-                BlockFrame[458] += 1;
+                BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] = 0;
+                BlockFrame[BLKID_S3_TANOOKI_INVIS_BLOCK] += 1;
             }
         }
-        else if(BlockFrame[458] > 0 && !tempBool)
+        else if(BlockFrame[BLKID_S3_TANOOKI_INVIS_BLOCK] > 0 && !tempBool)
         {
-            BlockFrame2[458] += 1;
-            if(BlockFrame2[458] >= 4)
+            BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] += 1;
+            if(BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] >= 4)
             {
-                BlockFrame2[458] = 0;
-                BlockFrame[458] -= 1;
+                BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] = 0;
+                BlockFrame[BLKID_S3_TANOOKI_INVIS_BLOCK] -= 1;
             }
         }
         else
-            BlockFrame2[458] = 0;
+            BlockFrame2[BLKID_S3_TANOOKI_INVIS_BLOCK] = 0;
     }
 }
 
